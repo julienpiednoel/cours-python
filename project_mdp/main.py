@@ -4,15 +4,19 @@ from passphrase import Passphrase
 
 #password = input("Quel est le mot de passe à tester ?")
 
-lowercase = int(input("Nombre de minuscule ?"))
-uppercase = int(input("Nombre de majuscule ?"))
-digits = int(input("Nombre de chiffre ?"))
-special_chars = int(input("Nombre de caractères spéciaux ?"))
+#lowercase = int(input("Nombre de minuscule ?"))
+#uppercase = int(input("Nombre de majuscule ?"))
+#digits = int(input("Nombre de chiffre ?"))
+#special_chars = int(input("Nombre de caractères spéciaux ?"))
 
-gen = Generator(lowercase, uppercase, digits, special_chars)
+#gen = Generator(lowercase, uppercase, digits, special_chars)
 
-password = gen.run_generator()
+#password = gen.run_generator()
 
-montest = Entropy(password)
+#montest = Entropy(password)
 
-montest.run_entropy()
+#montest.run_entropy()
+
+phrase = Passphrase()
+
+phrase.run_passphrase()
