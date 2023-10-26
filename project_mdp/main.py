@@ -1,5 +1,6 @@
 from strength import Entropy
 from generator import Generator
+from passphrase import Passphrase
 
 #password = input("Quel est le mot de passe à tester ?")
 
