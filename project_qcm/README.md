@@ -2,7 +2,7 @@
 
 Ce projet consiste en un quiz interactif sur les capitales des pays européens. Le quiz est implémenté en Python et utilise des classes pour les questions et les réponses.
 
-## Fonctionnement général
+## Fonctionnement général 
 
 Le projet est organisé en plusieurs fichiers Python et utilise des classes pour créer des questions et des réponses. Voici comment le projet est structuré :
 

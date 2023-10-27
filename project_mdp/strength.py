@@ -26,15 +26,19 @@ class Entropy:
 
         #Fonction for permettant de se déplace dans le mot de passe de l'utilisateur
         for char in self.password:
+
             #Fonction if permettant de vérifier si un caractère minuscule est présent dans le mot de passe
             if char in lowercase:
                 num_lowercase = 26
+
             #Fonction elif permettant de vérifier si un caractère majuscule est présent dans le mot de passe
             elif char in uppercase:
                 num_uppercase = 26
+
             #Fonction elif permettant de vérifier si un caractère chiffre est présent dans le mot de passe
             elif char in digits:
                 num_digits = 10
+
             # Fonction elif permettant de vérifier si un caractère spécial est présent dans le mot de passe
             elif char in special_chars:
                 num_special_chars = 30

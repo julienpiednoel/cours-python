@@ -1,10 +1,9 @@
-# main.py
+#Importation des fonctions venant des fichiers annexes
 from question import Question
 from reponse import Reponse
 from quiz import Quiz
 
-# Création des réponses et des questions (les réponses doivent être créées avant les questions)
-
+#Création des réponses et des questions (les réponses doivent être créées avant les questions)
 reponses1 = [Reponse("Berlin", False), Reponse("Paris", False), Reponse("Rome", True)]
 question1 = Question("Quelle est la capitale de l'Italie?", reponses1)
 
@@ -35,11 +34,10 @@ question9 = Question("Quelle est la capitale de l'Espagne?", reponses9)
 reponses10 = [Reponse("Vienne", False), Reponse("Prague", False), Reponse("Bruxelles", True)]
 question10 = Question("Quelle est la capitale de la Belgique?", reponses10)
 
-# Création de la liste des questionsa
-
+#Création de la liste des questionsa
 questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10]
 
-# Création du quiz en se basant sur la liste de question
+#Création du quiz en se basant sur la liste de question
 quiz = Quiz(questions)
 
 #Lancement du quiz

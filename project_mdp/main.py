@@ -25,8 +25,10 @@ while True:
 
             #Demande à l'utilisateur du mot de passe à tester
             password = input("Quel est le mot de passe à tester ?")
+
             #Création de l'objet testpassword (de type Entropy) permettant d'appeler la focntion de test de mot de passe
             testpassword = Entropy(password)
+
             #Lancement de la fonction run_entropy permettant de tester un mot de passe
             testpassword.run_entropy()
 
@@ -41,11 +43,14 @@ while True:
 
             #Création de l'objet gen (de type Generator)permettant d'appeler la fonction de génération de mot de passe
             gen = Generator(lowercase, uppercase, digits, special_chars)
-            # Lancement de la fonction run_generator permettant de générer un mot de passe
+
+            #Lancement de la fonction run_generator permettant de générer un mot de passe
             password = gen.run_generator()
-            # Création de l'objet testpassword (de type Entropy) permettant d'appeler la focntion de test de mot de passe
+
+            #Création de l'objet testpassword (de type Entropy) permettant d'appeler la focntion de test de mot de passe
             testpassword = Entropy(password)
-            # Lancement de la fonction run_entropy permettant de tester un mot de passe
+
+            #Lancement de la fonction run_entropy permettant de tester un mot de passe
             testpassword .run_entropy()
 
         #Partie permettant à l'utilisateur de générer des mots aléatoire pour créer une passphrase
@@ -53,6 +58,7 @@ while True:
 
             #Création de l'objet phrase (de type Passphrase)permettant d'appeler la fonction de génération de mot
             phrase = Passphrase()
+
             # Lancement de la fonction run_passphrase permettant de générer les mots
             phrase.run_passphrase()
 

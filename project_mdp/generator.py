@@ -12,7 +12,7 @@ class Generator:
         self.digits = digits
         self.special_chars = special_chars
 
-    #Définition d'un fonction run de ma classe Passphrase
+    #Définition d'un fonction run de ma classe Generator
     def run_generator(self):
 
         #Définition des variables utiles pour le programme
@@ -46,8 +46,10 @@ class Generator:
 
         #Transformation de mon string en liste
         password_list = list(password)
+
         #Utilisation de la librairie random pour mélanger aléatoirement les caractères de la liste
         random.shuffle(password_list)
+
         # Transformation de ma liste en string
         password = ''.join(password_list)
 
